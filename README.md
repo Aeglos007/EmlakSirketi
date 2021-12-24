@@ -4,145 +4,20 @@
 Emlak Uygulaması 
 
 1)a Emlakçıların Verileri 
-https://ray.so/?title=&theme=candy&spacing=64&background=true&darkMode=true&code=d2hpbGUgVHJ1ZToKICAgIGRhbmlzbWFuX1NheWlzaSA9IGludChpbnB1dCgiS2HDpyBkYW7EscWfbWFuIMOnYWzEscWfxLF5b3IiKSkKCiAgICBpZiBkYW5pc21hbl9TYXlpc2kgPiAwOgogICAgICAgIGJyZWFrCmZvciBpIGluIHJhbmdlKGRhbmlzbWFuX1NheWlzaSk6CiAgICBkYW5pc21hbl90b3BsYW1fa29taXN5b24gPSAwCiAgICBkYW5pc21hbl90b3BsYW1fYmVkZWw9MAogICAgY2V2YXAgPSAiZSIKICAgIGFkX3NveWFkID0gaW5wdXQoImRhbsSxxZ9tYW7EsW4gYWTEsSBzb3lhZMSxIG5lZGlyIikKCndoaWxlIGNldmFwIGluICJlRSI6CiAgICB3aGlsZSBUcnVlOgogICAgICAgIG1hYXMgPSBmbG9hdChpbnB1dCgibWFhxZ8gZ2lyaW5pei5Bc2dhcmkgw7xjcmV0ZSBlxZ9pdCB5YSBkYSBmYXpsYSBvbG1hbMSxZMSxciIpKQogICAgICAgIGlmIG1hYXMgPj0gYXNnYXJpOgogICAgICAgICAgICBicmVhawogICAgICAgIGVsc2U6CiAgICAgICAgICAgIHByaW50KCJBc2dhcmkgw7xjcmV0ZSBlxZ9pdCB5YSBkYSBmYXpsYSBvbG1hbMSxZMSxciIpCiAgICBrb3RhID0gbWFhcyAqIDEwCg&language=python
 
-![](Aspose.Words.caaf4ef3-6e46-4484-9cc2-b06146c01826.003.png)
+
+![](https://github.com/Aeglos007/EmlakSirketi/blob/main/images/raycast-untitled%20(01).png)
 
 1a)Ekran Görüntüsü 
 
-![](Aspose.Words.caaf4ef3-6e46-4484-9cc2-b06146c01826.004.png)
+![](https://github.com/Aeglos007/EmlakSirketi/blob/main/images/Aspose.Words.caaf4ef3-6e46-4484-9cc2-b06146c01826.004.png)
 
 1a)Açıklama 
 
 Danışman sayısının 0 altında olmaması kaydıyla input değeri giriyoruz.Sonrasında her danışmanın ismini öğreniyoruz. Buraya her danışman değişikliğinde sıfırlanacak birkaç sabit ekliyorum. 
 
 2)Emlak Tipi Ve İşlem Öğrenme 
-
-emlak\_tipi = input("emlak tipini girin.Konut, İş yeri, Arsa (K/k/İ/i/A/a karakterleri)") 
-
-while emlak\_tipi not in "KkİiAa": 
-
-print("hatalı giriş (K/k/İ/i/A/a karakterleri)") 
-
-`    `emlak\_tipi = input("emlak tipini girin.Konut, İş yeri, Arsa (K/k/İ/i/A/a karakterleri)") 
-
-if emlak\_tipi in "kK": 
-
-`    `islem = input("Satış mı yaptı kiralama mı (S/s/K/k karakterleri)") 
-
-while islem not in "SsKk": 
-
-print("belirtilen harfleri giriniz.(S/s/K/k karakterleri)") 
-
-`        `islem = input("Satış mı yaptı kiralama mı (S/s/K/k karakterleri)") 
-
-if islem in "Ss": 
-
-`        `bedel = float(input("Bedeli nedir")) 
-
-while bedel < 0: 
-
-print("0dan büyük bir sayı giriniz") 
-
-`            `bedel = float(input("Bedeli nedir")) 
-
-`            `satilan\_konut\_topfiyat += bedel 
-
-`            `satilan\_konut\_sayisi += 1 
-
-elif islem in "Kk": 
-
-`        `bedel = float(input("Bedeli nedir")) 
-
-while bedel < 0: 
-
-print("0dan büyük bir sayı giriniz") 
-
-`            `bedel = float(input("Bedeli nedir")) 
-
-`            `kiralanan\_konut\_sayisi += 1 
-
-kiralanan\_konut\_topfiyat += bedel 
-
-if bedel > asgari: 
-
-`                `asgariden\_yuksek\_kiralik\_konut += 1 ![](Aspose.Words.caaf4ef3-6e46-4484-9cc2-b06146c01826.005.png)
-
-elif emlak\_tipi in "İi": 
-
-`    `islem = input("Satış mı yaptı kiralama mı (S/s/K/k karakterleri)") 
-
-while islem not in "SsKk": 
-
-print("belirtilen harfleri giriniz.(S/s/K/k karakterleri)") 
-
-`        `islem = input("Satış mı yaptı kiralama mı (S/s/K/k karakterleri)") 
-
-if islem in "Ss": 
-
-`        `satilan\_isyeri\_sayisi += 1 
-
-bedel = float(input("Bedeli nedir")) 
-
-while bedel < 0: 
-
-print("0dan büyük bir sayı giriniz") 
-
-`            `bedel = float(input("Bedeli nedir")) 
-
-`            `satilan\_isyeri\_topfiyat += bedel 
-
-if islem in "Kk": 
-
-`        `kiralanan\_isyeri\_sayisi += 1 
-
-bedel = float(input("Bedeli nedir")) 
-
-while bedel < 0: 
-
-print("0dan büyük bir sayı giriniz") 
-
-`            `bedel = input("Bedeli nedir") 
-
-`            `kiralanan\_isyeri\_topfiyat += bedel 
-
-elif emlak\_tipi in "Aa": ![](Aspose.Words.caaf4ef3-6e46-4484-9cc2-b06146c01826.006.png)
-
-`    `islem = input("Satış mı yaptı kiralama mı (S/s/K/k karakterleri)") 
-
-while islem not in "SsKk": 
-
-print("belirtilen harfleri giriniz.(S/s/K/k karakterleri)") 
-
-`        `islem = input("Satış mı yaptı kiralama mı (S/s/K/k karakterleri)") 
-
-if islem in "Ss": 
-
-`        `satilan\_arsa\_sayisi += 1 
-
-bedel = float(input("Bedeli nedir")) 
-
-while bedel < 0: 
-
-print("0dan büyük bir sayı giriniz") 
-
-`            `bedel = float(input("Bedeli nedir")) 
-
-`            `satilan\_arsa\_topfiyat += bedel 
-
-elif islem in "Kk": 
-
-`        `kiralanan\_arsa\_sayisi += 1 
-
-bedel = float(input("Bedeli nedir")) 
-
-while bedel < 0: 
-
-print("0dan büyük bir sayı giriniz") 
-
-`            `bedel = float(input("Bedeli nedir")) 
-
-`            `kiralanan\_arsa\_topfiyat += bedel 
+![](https://github.com/Aeglos007/EmlakSirketi/blob/main/images/raycast-untitled%20(1).png)
 
 2)Ekran Görüntüsü
 
